@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the day</title>
+    <link rel="stylesheet" href="quote_gen.css">
+</head>
+<body>
+    <div class="main">
+        <p class="heading">Quote of the Day</p>
+        <p class="message">Press the button below to receive a random quote!</p>
+        <button onclick="show_quote()">New Quote</button>
+        <p id ="display_quote" class="quote"></p>
+        <p id ="display_author" class="author"></p>
+    </div>
+    <script>
+        let Quotes = [
+            {
+                "Quote" : "You have to write the book that wants to be written. And if the book will be too difficult for grown-ups, then you write it for children.",
+                "Author" : "Madeleine L'Engle"
+            },
+
+            {
+                "Quote" : "If you don't have time to read, you don't have the time (or the tools) to write. Simple as that.",
+                "Author" : "Stephen King" 
+            },
+
+            {
+                "Quote" : "We write to taste life twice, in the moment and in retrospect.",
+                "Author" : "Anaïs Nin" 
+            },
+
+            {
+                "Quote" : "Substitute 'damn' every time you're inclined to write 'very;' your editor will delete it and the writing will be just as it should be.",
+                "Author" : "Mark Twain"
+            },
+
+            {
+                "Quote" : "If there's a book that you want to read, but it hasn't been written yet, then you must write it.",
+                "Author" : "Toni Morrison"
+            },
+
+            {
+                "Quote" : "One day I will find the right words, and they will be simple.",
+                "Author" : "Jack Kerouac, The Dharma Bums"
+            },
+
+            {
+                "Quote" : "Either write something worth reading or do something worth writing.",
+                "Author" : "Benjamin Franklin"
+            },
+
+            {
+                "Quote" : "You never have to change anything you got up in the middle of the night to write.",
+                "Author" : "Saul Bellow"
+            },
+
+            {
+                "Quote" : "No tears in the writer, no tears in the reader. No surprise in the writer, no surprise in the reader.",
+                "Author" : "Robert Frost"
+            },
+
+            {
+                "Quote" : "You must stay drunk on writing so reality cannot destroy you.",
+                "Author" : "Ray Bradbury, Zen in the Art of Writing"
+            },
+
+            {
+                "Quote" : "Words can be like X-rays if you use them properly -- they'll go through anything. You read and you're pierced.",
+                "Author" : "Aldous Huxley, Brave New World"
+            },
+
+            {
+                "Quote" : "How vain it is to sit down to write when you have not stood up to live.",
+                "Author" : "Henry David Thoreau"
+            },
+
+            {
+                "Quote" : "I can shake off everything as I write; my sorrows disappear, my courage is reborn.",
+                "Author" : "Anne Frank"
+            },
+
+            {
+                "Quote" : "A writer is someone for whom writing is more difficult than it is for other people.",
+                "Author" : "Thomas Mann, Essays of Three Decades"
+            },
+
+            {
+                "Quote" : "Let me live, love, and say it well in good sentences.",
+                "Author" : "Sylvia Plath"
+            },
+
+            {
+                "Quote" : "I kept always two books in my pocket, one to read, one to write in.",
+                "Author" : "Robert Louis Stevenson"
+            },
+
+            {
+                "Quote" : "You can make anything by writing.",
+                "Author" : "C.S. Lewis"
+            },
+
+            {
+                "Quote" : "A word after a word after a word is power.",
+                "Author" : "Margaret Atwood"
+            },
+
+            {
+                "Quote" : "Tears are words that need to be written.",
+                "Author" : "Paulo Coelho"
+            },
+
+            {
+                "Quote" : "To survive, you must tell stories.",
+                "Author" : "Umberto Eco"
+            }
+        ]
+        function show_quote(){
+            var num = Math.floor(Math.random()*21);
+            document.getElementById('display_quote').innerHTML = (Quotes[num].Quote);
+            document.getElementById('display_author').innerHTML = (Quotes[num].Author);
+
+        }
+        
+
+
+
+
+    </script>
+</body>
+</html>
